@@ -15,6 +15,10 @@ function App() {
       <h5 className="border">
         Hi Karen, I’m wandering is it possible to order custom drawing?
       </h5>
+      <p className="border">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore
+      </p>
     </div>
   );
 }
@@ -24,6 +28,6 @@ export default App;
 // TODO:
 /**
  * [x] sass (variables, reset and typography)
- * [] relative paths tsconfig.json
+ * [x] relative paths tsconfig.json
  * [] eslint + prettier
  */
