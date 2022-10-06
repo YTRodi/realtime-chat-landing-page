@@ -1,6 +1,4 @@
-import { useState } from "react";
-
-function App() {
+const App = () => {
   return (
     <div>
       <p style={{ fontFamily: "Poppins", fontWeight: 400 }}>regular</p>
@@ -21,13 +19,6 @@ function App() {
       </p>
     </div>
   );
-}
+};
 
 export default App;
-
-// TODO:
-/**
- * [x] sass (variables, reset and typography)
- * [x] relative paths tsconfig.json
- * [] eslint + prettier
- */
