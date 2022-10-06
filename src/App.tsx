@@ -1,34 +1,29 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div>
+      <p style={{ fontFamily: "Poppins", fontWeight: 400 }}>regular</p>
+      <p style={{ fontFamily: "Poppins", fontWeight: 500 }}>medium</p>
+      <p style={{ fontFamily: "Poppins", fontWeight: 600 }}>semibold</p>
+      <p style={{ fontFamily: "Poppins", fontWeight: 700 }}>bold</p>
+
+      <h1 className="border">Let’s Connect with Your Visitors in Real Time</h1>
+      <h2 className="border">Chat with visitors while they browse your site</h2>
+      <h3 className="border">Online Shop</h3>
+      <h4 className="border">samantha@email.com</h4>
+      <h5 className="border">
+        Hi Karen, I’m wandering is it possible to order custom drawing?
+      </h5>
     </div>
   );
 }
 
 export default App;
+
+// TODO:
+/**
+ * [x] sass (variables, reset and typography)
+ * [] relative paths tsconfig.json
+ * [] eslint + prettier
+ */
