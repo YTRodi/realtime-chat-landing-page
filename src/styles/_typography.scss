@@ -41,3 +41,6 @@ h5 {
 p {
 	@include font($font-weight: $weight-regular, $size: 14px, $line-height: 26px);
 }
+a {
+	@include font($font-weight: $weight-regular, $size: 13px, $line-height: 13px);
+}
