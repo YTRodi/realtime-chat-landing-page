@@ -1,0 +1,75 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	margin-left: 60px;
+	gap: 70px;
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+	}
+
+	&__img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $primary;
+		color: $white;
+		width: 30px;
+		height: 30px;
+		border-radius: 1000px;
+		font-weight: $weight-bold;
+		font-size: 12px;
+		line-height: 12px;
+	}
+
+	&__brand-name {
+		font-weight: $weight-bold;
+		font-size: 14px;
+		line-height: 23px;
+		color: $primary;
+	}
+
+	&__links {
+		display: flex;
+		gap: 60px;
+	}
+
+	&__link {
+		& > a {
+			color: $secondary;
+		}
+	}
+}
+
+.auth {
+	&__links {
+		display: flex;
+		gap: 60px;
+	}
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&:not(:first-child) {
+			padding: 42px 61px;
+			background-color: $brown-light;
+			border-end-start-radius: 32px;
+		}
+
+		& > a {
+			color: $brown-darkest;
+			font-weight: $weight-semibold;
+		}
+	}
+}
