@@ -1,0 +1,39 @@
+$FIRST_IMG_SIZE: 502px;
+$SECOND_IMG_SIZE: 390px;
+$THIRD_IMG_SIZE: 328px;
+$BORDER_RADIUS: 999px;
+
+.wave-gallery {
+	position: relative;
+
+	&__img {
+		object-fit: cover;
+		position: absolute;
+
+		&:nth-child(odd) {
+			border-end-end-radius: $BORDER_RADIUS;
+			border-end-start-radius: $BORDER_RADIUS;
+		}
+		&:nth-child(even) {
+			border-top-left-radius: $BORDER_RADIUS;
+			border-top-right-radius: $BORDER_RADIUS;
+		}
+		/* TODO: improve this section with https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child#examples */
+		&:nth-child(1) {
+			width: $FIRST_IMG_SIZE;
+			height: $FIRST_IMG_SIZE;
+			top: $SECOND_IMG_SIZE;
+		}
+		&:nth-child(2) {
+			width: $SECOND_IMG_SIZE;
+			height: $SECOND_IMG_SIZE;
+			left: $FIRST_IMG_SIZE;
+		}
+		&:nth-child(3) {
+			width: $THIRD_IMG_SIZE;
+			height: $THIRD_IMG_SIZE;
+			top: $SECOND_IMG_SIZE;
+			left: $FIRST_IMG_SIZE + $SECOND_IMG_SIZE;
+		}
+	}
+}
