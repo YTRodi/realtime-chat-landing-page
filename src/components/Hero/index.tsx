@@ -1,26 +1,23 @@
+import RegisterCard from '../RegisterCard';
+import WaveGallery from '../WaveGallery';
+
 const Hero = () => (
-	<div>
+	<div className='hero'>
+		<div className='hero__content'>
+			<HeroHeader />
+			<RegisterCard />
+		</div>
 		<WaveGallery />
 	</div>
 );
 
-const WaveGallery = () => (
-	<div className='wave-gallery'>
-		<img
-			alt='hero-1'
-			className='wave-gallery__img'
-			src='/assets/hero/hero-1.png'
-		/>
-		<img
-			alt='hero-2'
-			className='wave-gallery__img'
-			src='/assets/hero/hero-2.png'
-		/>
-		<img
-			alt='hero-3'
-			className='wave-gallery__img'
-			src='/assets/hero/hero-3.png'
-		/>
+const HeroHeader = () => (
+	<div className='hero__header'>
+		<h1>Let’s Connect with Your Visitors in Real Time</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+			tempor incididunt ut labore
+		</p>
 	</div>
 );
 

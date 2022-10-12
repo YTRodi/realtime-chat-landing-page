@@ -1,0 +1,30 @@
+.register-card {
+	background-color: $white;
+
+	border-radius: 10px;
+	width: 682px;
+	padding: 30px;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0px 30px 80px rgba(47, 65, 88, 0.2);
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		& > p {
+			color: $gray-dark;
+		}
+	}
+	&__button {
+		border-radius: 10px;
+		padding: 24px 65px;
+		background-color: $violet-dark;
+		color: $white;
+		font-family: Poppins;
+		font-weight: $weight-semibold;
+		font-size: 14px;
+		line-height: 21px;
+	}
+}
