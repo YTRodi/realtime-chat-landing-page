@@ -1,0 +1,84 @@
+.main-content {
+	height: 100vh;
+
+	&-block {
+		height: 100%;
+
+		&-1 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			height: 100%;
+			gap: 54px;
+
+			&__left {
+				flex: 1;
+
+				display: flex;
+				flex-direction: column;
+				gap: 50px;
+			}
+			&__right {
+				height: 100%;
+				flex: 1.25;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}
+
+// TODO: move to components!!
+.grid-pills {
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+
+	&__cell {
+		height: 100%;
+		object-fit: cover;
+
+		&:nth-child(2) {
+			border-start-start-radius: 999px;
+			border-start-end-radius: 999px;
+		}
+		&:nth-child(3) {
+			border-end-start-radius: 999px;
+			border-end-end-radius: 999px;
+		}
+	}
+}
+
+.testimony-card {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.avatar-card {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+
+		& > p {
+			font-weight: $weight-medium;
+			font-size: 13px;
+			line-height: 13px;
+		}
+
+		& > span {
+			font-family: Poppins;
+			font-weight: $weight-regular;
+			font-size: 12px;
+			line-height: 12px;
+		}
+	}
+}
