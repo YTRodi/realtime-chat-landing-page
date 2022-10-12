@@ -1,7 +1,7 @@
-import { BRAND_NAME } from '../../constants';
+import { BRAND_NAME, NAVBAR_HEIGHT } from '../../constants';
 
 const Navbar = () => (
-	<header className='header'>
+	<header className='header' style={{ height: `${NAVBAR_HEIGHT}px` }}>
 		<nav className='nav'>
 			<div className='nav__logo'>
 				<p className='nav__img'>S</p>

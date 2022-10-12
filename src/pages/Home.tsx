@@ -1,8 +1,18 @@
-import { Navbar } from '../components';
+import { Hero, Navbar } from '../components';
+import { GAP_BETWEEN_NAVBAR_AND_HERO } from '../constants';
 
 const Home = () => (
 	<div>
-		<Navbar />
+		<div
+			style={{
+				display: 'flex',
+				flexDirection: 'column',
+				gap: `${GAP_BETWEEN_NAVBAR_AND_HERO}px`,
+			}}
+		>
+			<Navbar />
+			<Hero />
+		</div>
 	</div>
 );
 

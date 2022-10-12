@@ -1,0 +1,26 @@
+$FIXED_GAP: 0.5rem;
+
+.hero {
+	position: relative;
+	margin-left: 130px;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: $FIXED_GAP;
+
+		position: absolute;
+	}
+
+	&__header {
+		width: 510px;
+		display: flex;
+		flex-direction: column;
+		gap: $FIXED_GAP;
+
+		& > p {
+			color: $secondary;
+			width: 75%;
+		}
+	}
+}
