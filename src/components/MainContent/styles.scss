@@ -1,10 +1,7 @@
 .main-content {
-	height: 100vh;
-
 	&-block {
-		height: 100%;
-
 		&-1 {
+			height: 100vh;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -26,6 +23,7 @@
 		}
 
 		&-2 {
+			height: 100vh;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -34,10 +32,11 @@
 			gap: 220px;
 
 			&__left {
+				height: 100vh;
 				flex: 1;
-
 				display: flex;
 				justify-content: center;
+				align-items: center;
 			}
 			&__right {
 				flex: 1;
