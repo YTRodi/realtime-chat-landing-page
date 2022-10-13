@@ -1,4 +1,4 @@
-import { Hero, Navbar } from '../components';
+import { Hero, Layout, MainContent, Navbar } from '../components';
 import { GAP_BETWEEN_NAVBAR_AND_HERO } from '../constants';
 
 const Home = () => (
@@ -13,6 +13,9 @@ const Home = () => (
 			<Navbar />
 			<Hero />
 		</div>
+		<Layout>
+			<MainContent />
+		</Layout>
 	</div>
 );
 

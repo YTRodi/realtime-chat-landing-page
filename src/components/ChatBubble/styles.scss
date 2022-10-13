@@ -1,0 +1,35 @@
+$CHAT_BORDER_RADIUS: 32px;
+$CHAT_BUBBLE_OFFSET: -60%;
+
+.chat-bubble {
+	color: $white;
+	padding: 14px 30px;
+
+	position: absolute;
+	top: 40%;
+	border-start-start-radius: $CHAT_BORDER_RADIUS;
+	border-start-end-radius: $CHAT_BORDER_RADIUS;
+
+	&--left {
+		max-width: 230px;
+
+		background-color: $brown-dark;
+		left: $CHAT_BUBBLE_OFFSET;
+		border-end-start-radius: $CHAT_BORDER_RADIUS;
+	}
+	&--right {
+		background-color: $violet;
+		right: $CHAT_BUBBLE_OFFSET;
+		border-end-end-radius: $CHAT_BORDER_RADIUS;
+
+		&:nth-child(1) {
+			top: 15%;
+			right: -30%;
+			border-radius: $CHAT_BORDER_RADIUS;
+		}
+		&:nth-child(2) {
+			right: -80%;
+			top: 30%;
+		}
+	}
+}
