@@ -30,7 +30,7 @@ h2 {
 	@include font($font-weight: $weight-regular, $size: 50px, $line-height: 62px);
 }
 h3 {
-	@include font($font-weight: $weight-regular, $size: 40px, $line-height: 70px);
+	@include font($font-weight: $weight-regular, $size: 40px);
 }
 h4 {
 	@include font($font-weight: $weight-medium, $size: 23px, $line-height: 30px);
