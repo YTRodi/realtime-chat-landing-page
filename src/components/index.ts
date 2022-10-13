@@ -9,3 +9,4 @@ export { default as Divider } from './Divider';
 export { default as TestimonyCard } from './TestimonyCard';
 export { default as AvatarCard } from './AvatarCard';
 export { default as Pills } from './Pills';
+export { default as VideoCallCard } from './VideoCallCard';
