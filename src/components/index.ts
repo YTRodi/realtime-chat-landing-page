@@ -12,3 +12,4 @@ export { default as Pills } from './Pills';
 export { default as VideoCallCard } from './VideoCallCard';
 export { default as OrbitalImage } from './OrbitalImage';
 export { default as Footer } from './Footer';
+export { default as CaseStudy } from './CaseStudy';
