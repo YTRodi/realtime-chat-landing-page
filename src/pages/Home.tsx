@@ -21,20 +21,14 @@ const Home = () => {
 					stagger: 0.2,
 					ease: 'back',
 				})
-				.from('.pill', { rotateX: -90, duration: 1.25, stagger: 0.2 })
+				.from('.pill', { rotateX: -90, duration: 1, stagger: 0.2 })
 				.to('.register-card__button', { scale: 1.05 })
 				.to('.register-card__button', { scale: 1 });
 
 			// MAIN CONTENT TIMELINE
 			gsap
 				.timeline({
-					scrollTrigger: {
-						trigger: '.main-content-block-1',
-						markers: true,
-						start: 'top 60%',
-						// end: '80% cenqter',
-						toggleActions: 'restart reverse restart reverse',
-					},
+					scrollTrigger: { trigger: '.main-content-block-1', start: 'top 60%' },
 				})
 				.from(
 					[
@@ -49,7 +43,19 @@ const Home = () => {
 					}
 				)
 				.from('.main-content-block-1__left > .testimony-card', { opacity: 0 })
-				.from('.main-content-block-1__right', { rotateX: -90, duration: 1.25 });
+				.from('.main-content-block-1__right', { rotateX: -90, duration: 1 })
+				.from('.chat-bubble', {
+					height: 0,
+					width: 0,
+					opacity: 0,
+					duration: 0.5,
+					stagger: 0.2,
+				})
+				.from('.chat-bubble > h5', {
+					opacity: 0,
+					duration: 0.5,
+					stagger: 0.2,
+				});
 		});
 
 		return () => ctx.revert();
