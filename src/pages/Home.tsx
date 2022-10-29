@@ -28,7 +28,10 @@ const Home = () => {
 			// MAIN CONTENT TIMELINE
 			gsap
 				.timeline({
-					scrollTrigger: { trigger: '.main-content-block-1', start: 'top 60%' },
+					scrollTrigger: {
+						trigger: '.main-content-block-1',
+						start: 'top 60%',
+					},
 				})
 				.from(
 					[
@@ -54,6 +57,32 @@ const Home = () => {
 				.from('.chat-bubble > h5', {
 					opacity: 0,
 					duration: 0.5,
+					stagger: 0.2,
+				});
+
+			gsap
+				.timeline({
+					scrollTrigger: {
+						trigger: '.main-content-block-2',
+						start: 'top 60%',
+					},
+				})
+				.from(
+					[
+						'.main-content-block-2__right',
+						'.main-content-block-2__right > .divider',
+					],
+					{
+						xPercent: LAYOUT_OFFSET,
+						duration: 1,
+						stagger: 0.2,
+						ease: 'back',
+					}
+				)
+				.from('.main-content-block-2__right > .testimony-card', { opacity: 0 })
+				.from('.main-content-block-2__left', { opacity: 0, duration: 0.5 })
+				.from(['.orbital-image > img', '.orbital-image > .video-call-card'], {
+					opacity: 0,
 					stagger: 0.2,
 				});
 		});
