@@ -83,8 +83,44 @@ const Home = () => {
 				.from('.main-content-block-2__left', { opacity: 0, duration: 0.5 })
 				.from(['.orbital-image > img', '.orbital-image > .video-call-card'], {
 					opacity: 0,
+					duration: 1,
 					stagger: 0.2,
 				});
+
+			// FOOTER
+			gsap
+				.timeline({
+					scrollTrigger: {
+						trigger: '.footer',
+						start: 'top 60%',
+						markers: true,
+					},
+				})
+				.from('.footer__content', {
+					xPercent: -LAYOUT_OFFSET,
+					duration: 1,
+					ease: 'back',
+				})
+				.from('.footer__case-studies > .case_study', {
+					opacity: 0,
+					duration: 1,
+					stagger: 0.2,
+				});
+
+			const $caseStudies = gsap.utils.toArray<HTMLDivElement>('.case_study');
+			$caseStudies.forEach(caseStudy => {
+				const hover = gsap.to(caseStudy, {
+					scale: 1.1,
+					duration: 0.5,
+					paused: true,
+				});
+				caseStudy.addEventListener('mouseenter', () => {
+					hover.play();
+				});
+				caseStudy.addEventListener('mouseleave', () => {
+					hover.reverse();
+				});
+			});
 		});
 
 		return () => ctx.revert();
