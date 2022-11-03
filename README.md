@@ -5,7 +5,7 @@
  - React
  - Typescript
  - TailwindCSS
- - Sass (.SCSS)
+ - Sass (.SCSS) - BEM
  - GSAP
 
 # Deploy
