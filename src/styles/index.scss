@@ -1,0 +1,23 @@
+@import './variables.scss';
+@import './mixins.scss';
+@import './typography.scss';
+@import './reset.scss';
+
+@import './_dev.scss';
+
+@import '../components/Navbar/styles.scss';
+@import '../components/Hero/styles.scss';
+@import '../components/RegisterCard/styles.scss';
+@import '../components/WaveGallery/styles.scss';
+@import '../components/PillImage/styles.scss';
+@import '../components/Layout/styles.scss';
+@import '../components/MainContent/styles.scss';
+@import '../components/Divider/styles.scss';
+@import '../components/TestimonyCard/styles.scss';
+@import '../components/AvatarCard/styles.scss';
+@import '../components/Pills/styles.scss';
+@import '../components/ChatBubble/styles.scss';
+@import '../components/VideoCallCard/styles.scss';
+@import '../components/OrbitalImage/styles.scss';
+@import '../components/Footer/styles.scss';
+@import '../components/CaseStudy/styles.scss';

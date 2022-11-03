@@ -1,0 +1,22 @@
+$CHAT_BORDER_RADIUS: 32px;
+$CHAT_BUBBLE_OFFSET: -60%;
+
+.chat-bubble {
+	color: $white;
+	padding: 14px 30px;
+	border-start-start-radius: $CHAT_BORDER_RADIUS;
+	border-start-end-radius: $CHAT_BORDER_RADIUS;
+
+	&--primary {
+		background-color: $brown-dark;
+	}
+	&--secondary {
+		background-color: $violet;
+	}
+	&--sender {
+		border-end-start-radius: $CHAT_BORDER_RADIUS;
+	}
+	&--receiver {
+		border-end-end-radius: $CHAT_BORDER_RADIUS;
+	}
+}

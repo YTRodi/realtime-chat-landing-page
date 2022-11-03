@@ -1,0 +1,37 @@
+.pill {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1000px;
+
+	display: flex;
+	align-items: flex-end;
+
+	&:nth-child(even) {
+		align-items: flex-start;
+	}
+	&:nth-child(1) {
+		width: $FIRST_IMG_SIZE;
+	}
+	&:nth-child(2) {
+		width: $SECOND_IMG_SIZE;
+	}
+	&:nth-child(3) {
+		width: $THIRD_IMG_SIZE;
+	}
+
+	&__img {
+		height: 50%;
+		width: 100%;
+		object-fit: cover;
+
+		&--top {
+			border-start-start-radius: 999px;
+			border-start-end-radius: 999px;
+		}
+		&--bottom {
+			border-end-start-radius: 999px;
+			border-end-end-radius: 999px;
+		}
+	}
+}

@@ -1,0 +1,41 @@
+$CHAT_BUBBLE_OFFSET: -60%;
+
+.grid-pills {
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+
+	&__cell {
+		position: relative;
+
+		& > img {
+			height: 100%;
+		}
+	}
+	&__chat-bubbles {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		position: absolute;
+
+		&--left {
+			top: 35%;
+			left: $CHAT_BUBBLE_OFFSET;
+			width: 234px;
+		}
+		&--right {
+			top: 15%;
+
+			left: 80%;
+			& > :nth-child(1) {
+				// Override chat-bubble styles
+				width: 159px;
+				border-radius: 32px;
+			}
+			& > :nth-child(2) {
+				width: 319px;
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+.orbital-image {
+	position: relative;
+
+	&__img {
+		position: absolute;
+		top: 0;
+		right: -20%;
+	}
+}

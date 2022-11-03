@@ -1,0 +1,26 @@
+.avatar-card {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+
+		& > p {
+			color: $blue-darkest;
+			font-weight: $weight-medium;
+			font-size: 13px;
+			line-height: 13px;
+		}
+
+		& > span {
+			color: $blue-dark;
+			font-family: Poppins;
+			font-weight: $weight-regular;
+			font-size: 12px;
+			line-height: 12px;
+		}
+	}
+}
