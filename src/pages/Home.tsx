@@ -93,7 +93,6 @@ const Home = () => {
 					scrollTrigger: {
 						trigger: '.footer',
 						start: 'top 60%',
-						markers: true,
 					},
 				})
 				.from('.footer__content', {
